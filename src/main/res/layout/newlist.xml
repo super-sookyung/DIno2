@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_margin="25dp"
+            android:text="취소"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/purpose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:fontFamily="sans-serif-black"
+            android:text="목표생성"
+            android:textSize="25dp" />
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="25dp"
+            android:text="추가"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/목표"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="sans-serif-black"
+            android:text="목표"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/addHighTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/목표"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:hint="하고싶은 일을 적어주세요."
+            android:textColor="#A2A7A7"
+            android:textSize="15dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/addHighTodo">
+            <TextView
+                android:id="@+id/목표실행일"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif-black"
+                android:text="목표실행일"
+                android:textSize="15dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:text="월" />
+
+            <Button
+                android:id="@+id/tue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/mon"
+                android:text="화" />
+
+            <Button
+                android:id="@+id/wed"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/tue"
+                android:text="수" />
+
+            <Button
+                android:id="@+id/thu"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/wed"
+                android:text="목" />
+
+            <Button
+                android:id="@+id/fri"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/thu"
+                android:text="금" />
+
+            <Button
+                android:id="@+id/sat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/fri"
+                android:text="토" />
+
+            <Button
+                android:id="@+id/sun"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/sat"
+                android:text="일" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/할일추가"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="280dp"
+            android:fontFamily="sans-serif-black"
+            android:text="할일 추가"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/addLowTodo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/할일추가"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:hint="목표를 위해 필요한 세부 할일을 적어주세요."
+            android:textColor="#A2A7A7"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/moreLowTodo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="325dp"
+            android:text="+" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addLowTodo"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/작은목표실행일"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+
+                android:fontFamily="sans-serif-black"
+                android:text="목표실행일"
+                android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/monday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:text="월"
+                />
+
+            <Button
+                android:id="@+id/tuesday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/mon"
+                android:text="화" />
+
+            <Button
+                android:id="@+id/wednesday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/tue"
+                android:text="수" />
+
+            <Button
+                android:id="@+id/thursday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/wed"
+                android:text="목" />
+
+            <Button
+                android:id="@+id/friday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/thu"
+                android:text="금" />
+
+            <Button
+                android:id="@+id/satday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/fri"
+                android:text="토" />
+
+            <Button
+                android:id="@+id/sunday"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/sat"
+                android:text="일" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
